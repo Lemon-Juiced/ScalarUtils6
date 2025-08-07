@@ -1,5 +1,6 @@
 package site.scalarstudios.scalarutils.item.custom;
 
+import dev.lemonjuice.scalar_core.item.InfiniteFluidBucketItem;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
@@ -13,23 +14,10 @@ import net.minecraft.world.level.material.Fluids;
 
 import java.util.List;
 
-public class InfiniteFluidChaliceItem extends BucketItem {
+public class InfiniteFluidChaliceItem extends InfiniteFluidBucketItem {
 
     public InfiniteFluidChaliceItem(Fluid content, Properties properties) {
         super(content, properties);
-    }
-
-    @Override
-    public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
-        // Call super to handle placement logic
-        InteractionResultHolder<ItemStack> result = super.use(level, player, hand);
-
-        // If placement succeeded, return the original stack (do not consume)
-        if (result.getResult().consumesAction()) {
-            return InteractionResultHolder.sidedSuccess(player.getItemInHand(hand), level.isClientSide());
-        }
-        // Otherwise, return the original result
-        return result;
     }
 
     @Override

@@ -78,6 +78,9 @@ configurations {
 }
 
 dependencies {
+    // Scalar Core Dependency
+    implementation "curse.maven:scalar_core-1112771:6858242"
+
     // QoL For Testing
     implementation "curse.maven:jade-324717:6853386" // Jade
     implementation "curse.maven:jei-238222:6829086" // JEI
