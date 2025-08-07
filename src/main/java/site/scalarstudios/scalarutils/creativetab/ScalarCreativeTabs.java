@@ -21,6 +21,10 @@ public class ScalarCreativeTabs {
 
     public static void registerTabs(BuildCreativeModeTabContentsEvent event) {
         if (event.getTab() == SCALAR_ITEMS_TAB.get()) {
+            event.accept(ScalarItems.CHALICE.get());
+            event.accept(ScalarItems.CHALICE_OF_THE_CORE.get());
+            event.accept(ScalarItems.CHALICE_OF_THE_SEA.get());
+            event.accept(ScalarItems.HEART_OF_THE_CORE.get());
             event.accept(ScalarItems.MAIL.get());
         }
     }

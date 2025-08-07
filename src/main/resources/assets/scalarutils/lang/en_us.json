@@ -1,5 +1,12 @@
 {
   "itemGroup.scalarutils.items": "Scalar Utils 6: Items",
 
-  "item.scalarutils.mail": "Mail"
+  "item.scalarutils.chalice": "Chalice",
+  "item.scalarutils.chalice_of_the_core": "Chalice of the Core",
+  "item.scalarutils.chalice_of_the_sea": "Chalice of the Sea",
+  "item.scalarutils.heart_of_the_core": "Heart of the Core",
+  "item.scalarutils.mail": "Mail",
+
+  "tooltip.scalarutils.infinite_fluid_chalice.lava": "This chalice holds an endless supply of lava.",
+  "tooltip.scalarutils.infinite_fluid_chalice.water": "This chalice holds an endless supply of water."
 }

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "scalarutils:chalice"
+    },
+    {
+      "item": "scalarutils:heart_of_the_core"
+    }
+  ],
+  "result": {
+    "id": "scalarutils:chalice_of_the_core",
+    "count": 1
+  }
+}
