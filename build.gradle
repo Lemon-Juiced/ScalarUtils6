@@ -13,6 +13,10 @@ version = mod_version
 group = mod_group_id
 
 repositories {
+    mavenLocal()
+    maven { url = "https://minecraft.curseforge.com/api/maven/"}
+    maven { url = "https://www.cursemaven.com"}
+    maven { url 'https://maven.blamejared.com' }
 }
 
 base {
@@ -74,6 +78,9 @@ configurations {
 }
 
 dependencies {
+    // QoL For Testing
+    implementation "curse.maven:jade-324717:6853386" // Jade
+    implementation "curse.maven:jei-238222:6829086" // JEI
 }
 
 var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {
