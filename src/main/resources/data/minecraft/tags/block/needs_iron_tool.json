@@ -1,8 +1,10 @@
 {
   "values": [
+    "scalarutils:citrine_block",
     "scalarutils:citrine_ore",
     "scalarutils:deepslate_citrine_ore",
-    "scalarutils:citrine_block"
+    "scalarutils:rose_gold_block",
+    "scalarutils:white_gold_ore"
   ],
   "replace": false
 }

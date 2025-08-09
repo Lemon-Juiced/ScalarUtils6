@@ -1,7 +1,9 @@
 {
   "values": [
     "scalarutils:citrine_block",
-    "scalarutils:umbralite_gem_block"
+    "scalarutils:rose_gold_block",
+    "scalarutils:umbralite_gem_block",
+    "scalarutils:white_gold_block"
   ],
   "replace": false
 }

@@ -1,6 +1,8 @@
 {
   "values": [
     "#c:storage_blocks/citrine",
-    "#c:storage_blocks/umbralite_gem"
+    "#c:storage_blocks/rose_gold",
+    "#c:storage_blocks/umbralite_gem",
+    "#c:storage_blocks/white_gold"
   ]
 }

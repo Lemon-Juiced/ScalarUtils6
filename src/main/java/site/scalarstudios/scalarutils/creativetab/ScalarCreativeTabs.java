@@ -33,19 +33,27 @@ public class ScalarCreativeTabs {
             event.accept(ScalarBlocks.CITRINE_BLOCK.get());
             event.accept(ScalarBlocks.CITRINE_ORE.get());
             event.accept(ScalarBlocks.DEEPSLATE_CITRINE_ORE.get());
+            event.accept(ScalarBlocks.ROSE_GOLD_BLOCK.get());
             event.accept(ScalarBlocks.UMBRAL_GOO_ORE.get());
             event.accept(ScalarBlocks.UMBRALITE_GEM_BLOCK.get());
+            event.accept(ScalarBlocks.WHITE_GOLD_BLOCK.get());
         } else if (event.getTab() == SCALAR_ITEMS_TAB.get()) {
             event.accept(ScalarItems.CITRINE.get());
             event.accept(ScalarItems.CHALICE.get());
-            event.accept(ScalarItems.CHALICE_OF_THE_CORE.get());
-            event.accept(ScalarItems.CHALICE_OF_THE_SEA.get());
             event.accept(ScalarItems.HEART_OF_THE_CORE.get());
             event.accept(ScalarItems.MAIL.get());
+            event.accept(ScalarItems.ROSE_GOLD_ALLOY_COMPOUND.get());
+            event.accept(ScalarItems.ROSE_GOLD_INGOT.get());
+            event.accept(ScalarItems.ROSE_GOLD_NUGGET.get());
             event.accept(ScalarItems.UMBRAL_GOO.get());
             event.accept(ScalarItems.UMBRALITE_GEM.get());
             event.accept(ScalarItems.UMBRALITE_SMITHING_TEMPLATE.get());
+            event.accept(ScalarItems.WHITE_GOLD_ALLOY_COMPOUND.get());
+            event.accept(ScalarItems.WHITE_GOLD_INGOT.get());
+            event.accept(ScalarItems.WHITE_GOLD_NUGGET.get());
         } else if (event.getTab() == SCALAR_TOOLS_TAB.get()) {
+            event.accept(ScalarItems.CHALICE_OF_THE_CORE.get());
+            event.accept(ScalarItems.CHALICE_OF_THE_SEA.get());
             event.accept(ScalarItems.UMBRALITE_SWORD.get());
         }
     }

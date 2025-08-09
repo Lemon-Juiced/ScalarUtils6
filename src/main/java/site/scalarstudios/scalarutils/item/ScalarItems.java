@@ -22,9 +22,15 @@ public class ScalarItems {
     public static final Supplier<Item> CHALICE = ITEMS.register("chalice", () -> new Item(new Item.Properties()));
     public static final Supplier<Item> HEART_OF_THE_CORE = ITEMS.register("heart_of_the_core", () -> new Item(new Item.Properties().rarity(Rarity.UNCOMMON)));
     public static final Supplier<Item> MAIL = ITEMS.register("mail", () -> new Item(new Item.Properties()));
+    public static final Supplier<Item> ROSE_GOLD_ALLOY_COMPOUND = ITEMS.register("rose_gold_alloy_compound", () -> new Item(new Item.Properties()));
+    public static final Supplier<Item> ROSE_GOLD_INGOT = ITEMS.register("rose_gold_ingot", () -> new Item(new Item.Properties()));
+    public static final Supplier<Item> ROSE_GOLD_NUGGET = ITEMS.register("rose_gold_nugget", () -> new Item(new Item.Properties()));
     public static final Supplier<Item> UMBRAL_GOO = ITEMS.register("umbral_goo", () -> new Item(new Item.Properties()));
     public static final Supplier<Item> UMBRALITE_GEM = ITEMS.register("umbralite_gem", () -> new Item(new Item.Properties()));
     public static final Supplier<Item> UMBRALITE_SMITHING_TEMPLATE = ITEMS.register("umbralite_smithing_template", () -> new Item(new Item.Properties()));
+    public static final Supplier<Item> WHITE_GOLD_ALLOY_COMPOUND = ITEMS.register("white_gold_alloy_compound", () -> new Item(new Item.Properties()));
+    public static final Supplier<Item> WHITE_GOLD_INGOT = ITEMS.register("white_gold_ingot", () -> new Item(new Item.Properties()));
+    public static final Supplier<Item> WHITE_GOLD_NUGGET = ITEMS.register("white_gold_nugget", () -> new Item(new Item.Properties()));
 
     // Utility Items
     public static final Supplier<Item> CHALICE_OF_THE_CORE = ITEMS.register("chalice_of_the_core", () -> new InfiniteFluidChaliceItem(Fluids.LAVA, new Item.Properties().stacksTo(1).rarity(Rarity.RARE)));

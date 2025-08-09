@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "scalarutils:white_gold_ingot"
+    }
+  ],
+  "result": {
+    "id": "scalarutils:white_gold_nugget",
+    "count": 9
+  }
+}

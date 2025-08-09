@@ -35,7 +35,11 @@ public class ScalarBlocks {
             .requiresCorrectToolForDrops()
             .sound(SoundType.DEEPSLATE)
             .mapColor(MapColor.DEEPSLATE)));
-
+    public static final DeferredBlock<Block> ROSE_GOLD_BLOCK = registerBlock("rose_gold_block", () -> new Block(BlockBehaviour.Properties.of()
+            .strength(5.0F, 6.0F)
+            .requiresCorrectToolForDrops()
+            .sound(SoundType.METAL)
+            .mapColor(MapColor.COLOR_RED)));
     public static final DeferredBlock<Block> UMBRAL_GOO_ORE = registerBlock("umbral_goo_ore", () -> new Block(BlockBehaviour.Properties.of()
             .strength(3.0F, 3.0F)
             .requiresCorrectToolForDrops()
@@ -46,6 +50,11 @@ public class ScalarBlocks {
             .requiresCorrectToolForDrops()
             .sound(SoundType.METAL)
             .mapColor(MapColor.COLOR_PURPLE)));
+    public static final DeferredBlock<Block> WHITE_GOLD_BLOCK = registerBlock("white_gold_block", () -> new Block(BlockBehaviour.Properties.of()
+            .strength(5.0F, 6.0F)
+            .requiresCorrectToolForDrops()
+            .sound(SoundType.METAL)
+            .mapColor(MapColor.SNOW)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

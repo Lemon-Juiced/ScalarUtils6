@@ -3,8 +3,10 @@
     "scalarutils:citrine_block",
     "scalarutils:citrine_ore",
     "scalarutils:deepslate_citrine_ore",
+    "scalarutils:rose_gold_block",
     "scalarutils:umbral_goo_ore",
-    "scalarutils:umbralite_gem_block"
+    "scalarutils:umbralite_gem_block",
+    "scalarutils:white_gold_block"
   ],
   "replace": false
 }
