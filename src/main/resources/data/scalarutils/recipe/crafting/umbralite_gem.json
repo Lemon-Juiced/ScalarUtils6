@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "scalarutils:umbralite_gem_block"
+    }
+  ],
+  "result": {
+    "id": "scalarutils:umbralite_gem",
+    "count": 9
+  }
+}

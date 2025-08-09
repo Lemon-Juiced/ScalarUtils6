@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#T#",
+    "#E#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "scalarutils:umbralite_gem"
+    },
+    "T": {
+      "item": "minecraft:netherite_upgrade_smithing_template"
+    },
+    "E": {
+      "item": "minecraft:end_stone_bricks"
+    }
+  },
+  "result": {
+    "id": "scalarutils:umbralite_smithing_template",
+    "count": 1
+  }
+}

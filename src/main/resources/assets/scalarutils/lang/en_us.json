@@ -1,12 +1,31 @@
 {
+  "itemGroup.scalarutils.blocks": "Scalar Utils 6: Blocks",
   "itemGroup.scalarutils.items": "Scalar Utils 6: Items",
+  "itemGroup.scalarutils.tools": "Scalar Utils 6: Tools",
 
+  "item.scalarutils.citrine": "Citrine",
   "item.scalarutils.chalice": "Chalice",
   "item.scalarutils.chalice_of_the_core": "Chalice of the Core",
   "item.scalarutils.chalice_of_the_sea": "Chalice of the Sea",
   "item.scalarutils.heart_of_the_core": "Heart of the Core",
   "item.scalarutils.mail": "Mail",
+  "item.scalarutils.umbral_goo": "Umbral Goo",
+  "item.scalarutils.umbralite_gem": "Umbralite Gem",
+  "item.scalarutils.umbralite_smithing_template": "Umbralite Smithing Template",
+  "item.scalarutils.umbralite_sword": "Umbralite Sword",
 
-  "tooltip.scalarutils.infinite_fluid_chalice.lava": "This chalice holds an endless supply of lava.",
-  "tooltip.scalarutils.infinite_fluid_chalice.water": "This chalice holds an endless supply of water."
+  "block.scalarutils.citrine_block": "Citrine Block",
+  "block.scalarutils.citrine_ore": "Citrine Ore",
+  "block.scalarutils.deepslate_citrine_ore": "Deepslate Citrine Ore",
+  "block.scalarutils.umbral_goo_ore": "Umbral Goo Ore",
+  "block.scalarutils.umbralite_gem_block": "Umbralite Gem Block",
+
+  "tooltip.scalarutils.infinite_fluid_chalice.lava": "This Chalice Holds An Endless Supply Of Lava.",
+  "tooltip.scalarutils.infinite_fluid_chalice.water": "This Chalice Holds An Endless Supply Of Water.",
+  "tooltip.scalarutils.umbralite_sword.strength": "Strength %s",
+  "tooltip.scalarutils.umbralite_sword.no_strength": "No Strength Bonus",
+  "tooltip.scalarutils.umbralite_sword.kills_to_next": "%s Kills To Next Level",
+  "tooltip.scalarutils.umbralite_sword.max_level": "Max Level Reached",
+  "tooltip.scalarutils.umbralite_sword.total_kills": "Total Kills: %s",
+  "tooltip.scalarutils.umbralite_sword.aoe_note": "Note: Sweeping/AOE Kills Are Not Counted"
 }

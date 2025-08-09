@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "tag": "c:ores/citrine"
+  },
+  "result": {
+    "id": "scalarutils:citrine"
+  },
+  "experience": 0.1,
+  "cookingtime": 100
+}

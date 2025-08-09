@@ -1,0 +1,10 @@
+{
+  "values": [
+    "scalarutils:citrine_block",
+    "scalarutils:citrine_ore",
+    "scalarutils:deepslate_citrine_ore",
+    "scalarutils:umbral_goo_ore",
+    "scalarutils:umbralite_gem_block"
+  ],
+  "replace": false
+}

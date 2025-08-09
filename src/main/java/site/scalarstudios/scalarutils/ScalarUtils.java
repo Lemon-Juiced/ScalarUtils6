@@ -7,7 +7,9 @@ import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
+import site.scalarstudios.scalarutils.block.ScalarBlocks;
 import site.scalarstudios.scalarutils.creativetab.ScalarCreativeTabs;
+import site.scalarstudios.scalarutils.datacomponent.ScalarDataComponents;
 import site.scalarstudios.scalarutils.item.ScalarItems;
 
 @Mod(ScalarUtils.MODID)
@@ -17,8 +19,12 @@ public class ScalarUtils {
     public ScalarUtils(IEventBus modEventBus, ModContainer modContainer) {
         modEventBus.addListener(this::commonSetup);
 
-        // Register Items
+        // Register Items and Blocks
         ScalarItems.register(modEventBus);
+        ScalarBlocks.register(modEventBus);
+
+        // Register Data Components
+        ScalarDataComponents.register(modEventBus);
 
         // Register Creative Tabs
         ScalarCreativeTabs.register(modEventBus);
