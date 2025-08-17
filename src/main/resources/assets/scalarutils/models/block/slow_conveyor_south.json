@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "scalarutils:block/slow_conveyor_arrow_orientation_1",
+    "east": "scalarutils:block/slow_conveyor_arrow_orientation_4",
+    "north": "scalarutils:block/slow_conveyor_bottom",
+    "particle": "scalarutils:block/slow_conveyor_arrow",
+    "south": "scalarutils:block/slow_conveyor_top",
+    "up": "scalarutils:block/slow_conveyor_arrow_orientation_3",
+    "west": "scalarutils:block/slow_conveyor_arrow_orientation_2"
+  }
+}

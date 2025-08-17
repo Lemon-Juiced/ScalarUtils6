@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "scalarutils:fast_conveyor_north"
+    }
+  ],
+  "result": {
+    "id": "scalarutils:fast_conveyor_east",
+    "count": 1
+  }
+}

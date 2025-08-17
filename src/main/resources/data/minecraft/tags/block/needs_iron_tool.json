@@ -4,7 +4,19 @@
     "scalarutils:citrine_ore",
     "scalarutils:deepslate_citrine_ore",
     "scalarutils:rose_gold_block",
-    "scalarutils:white_gold_ore"
+    "scalarutils:white_gold_ore",
+    "scalarutils:slow_conveyor_north",
+    "scalarutils:slow_conveyor_south",
+    "scalarutils:slow_conveyor_west",
+    "scalarutils:slow_conveyor_east",
+    "scalarutils:medium_conveyor_north",
+    "scalarutils:medium_conveyor_south",
+    "scalarutils:medium_conveyor_west",
+    "scalarutils:medium_conveyor_east",
+    "scalarutils:fast_conveyor_north",
+    "scalarutils:fast_conveyor_south",
+    "scalarutils:fast_conveyor_west",
+    "scalarutils:fast_conveyor_east"
   ],
   "replace": false
 }

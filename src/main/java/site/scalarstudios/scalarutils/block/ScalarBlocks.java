@@ -12,10 +12,10 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import site.scalarstudios.scalarutils.ScalarUtils;
+import site.scalarstudios.scalarutils.block.factory.ScalarBlockFactory;
 import site.scalarstudios.scalarutils.item.ScalarItems;
 
 import java.util.function.Supplier;
-
 
 public class ScalarBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(ScalarUtils.MODID);
@@ -67,6 +67,10 @@ public class ScalarBlocks {
     }
 
     public static void register(IEventBus eventBus) {
+        // Register the Factories
+        ScalarBlockFactory.buildConveyorBlocks();
+
+        // Register the blocks
         BLOCKS.register(eventBus);
     }
 }

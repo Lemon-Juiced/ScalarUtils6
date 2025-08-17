@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "scalarutils:slow_conveyor_south"
+    }
+  ],
+  "result": {
+    "id": "scalarutils:slow_conveyor_west",
+    "count": 1
+  }
+}

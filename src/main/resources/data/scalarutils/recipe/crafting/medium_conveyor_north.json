@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#L#",
+    "LGL",
+    "#L#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stone"
+    },
+    "L": {
+      "item": "minecraft:lapis_lazuli"
+    },
+    "G": {
+      "item": "minecraft:gold_block"
+    }
+  },
+  "result": {
+    "id": "scalarutils:medium_conveyor_north",
+    "count": 16
+  }
+}

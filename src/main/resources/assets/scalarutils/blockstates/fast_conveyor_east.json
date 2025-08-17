@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "scalarutils:block/fast_conveyor_east"
+    }
+  }
+}
