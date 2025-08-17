@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "scalarutils:umbralite_smithing_template"
+  },
+  "base": {
+    "item": "minecraft:netherite_hoe"
+  },
+  "addition": {
+    "item": "scalarutils:umbralite_gem"
+  },
+  "result": {
+    "id": "scalarutils:umbralite_hoe"
+  }
+}

@@ -12,4 +12,5 @@ As per usual, this version of Scalar Utils differs from its predecessors revivin
   - **Chalice of the Core**: An infinite "bucket" of lava.
   - **Chalice of the Seas**: An infinite "bucket" of water.
   - **Mail**: Mail that can be used to craft chainmail armor.
-  - **Umbralite Sword**: A sword that deals more damage the more you use it.
+  - **Umbralite Sword**: A sword that gives the owner strength the more the owner use it.
+  - **Umbralite Toolset**: A toolset that gives the owner haste the more the owner use it.

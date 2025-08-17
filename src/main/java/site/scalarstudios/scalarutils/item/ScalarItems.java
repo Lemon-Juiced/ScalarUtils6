@@ -6,13 +6,12 @@ import net.minecraft.world.level.material.Fluids;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import site.scalarstudios.scalarutils.ScalarUtils;
-import site.scalarstudios.scalarutils.item.custom.InfiniteFluidChaliceItem;
-import site.scalarstudios.scalarutils.item.custom.UmbraliteSwordItem;
+import site.scalarstudios.scalarutils.item.custom.*;
 import site.scalarstudios.scalarutils.item.tier.ScalarTiers;
 
 import java.util.function.Supplier;
 
-import static dev.lemonjuice.scalar_core.item.ToolItemPropFactory.getSwordItemProperties;
+import static dev.lemonjuice.scalar_core.item.ToolItemPropFactory.*;
 
 public class ScalarItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.createItems(ScalarUtils.MODID);
@@ -37,7 +36,11 @@ public class ScalarItems {
     public static final Supplier<Item> CHALICE_OF_THE_SEA = ITEMS.register("chalice_of_the_sea", () -> new InfiniteFluidChaliceItem(Fluids.WATER, new Item.Properties().stacksTo(1).rarity(Rarity.RARE)));
 
     // Umbralite Items
-    public static final Supplier<Item> UMBRALITE_SWORD = ITEMS.register("umbralite_sword", () -> new UmbraliteSwordItem(ScalarTiers.UMBRALITE, getSwordItemProperties(ScalarTiers.UMBRALITE)));
+    public static final Supplier<Item> UMBRALITE_SWORD = ITEMS.register("umbralite_sword", () -> new UmbraliteSwordItem(getSwordItemProperties(ScalarTiers.UMBRALITE)));
+    public static final Supplier<Item> UMBRALITE_PICKAXE = ITEMS.register("umbralite_pickaxe", () -> new UmbralitePickaxeItem(getPickaxeItemProperties(ScalarTiers.UMBRALITE)));
+    public static final Supplier<Item> UMBRALITE_AXE = ITEMS.register("umbralite_axe", () -> new UmbraliteAxeItem(getAxeItemProperties(ScalarTiers.UMBRALITE)));
+    public static final Supplier<Item> UMBRALITE_SHOVEL = ITEMS.register("umbralite_shovel", () -> new UmbraliteShovelItem(getShovelItemProperties(ScalarTiers.UMBRALITE)));
+    public static final Supplier<Item> UMBRALITE_HOE = ITEMS.register("umbralite_hoe", () -> new UmbraliteHoeItem(getHoeItemProperties(ScalarTiers.UMBRALITE)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

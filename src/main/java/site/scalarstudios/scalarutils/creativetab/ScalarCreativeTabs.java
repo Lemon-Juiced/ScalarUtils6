@@ -62,6 +62,10 @@ public class ScalarCreativeTabs {
             event.accept(ScalarItems.CHALICE_OF_THE_CORE.get());
             event.accept(ScalarItems.CHALICE_OF_THE_SEA.get());
             event.accept(ScalarItems.UMBRALITE_SWORD.get());
+            event.accept(ScalarItems.UMBRALITE_PICKAXE.get());
+            event.accept(ScalarItems.UMBRALITE_AXE.get());
+            event.accept(ScalarItems.UMBRALITE_SHOVEL.get());
+            event.accept(ScalarItems.UMBRALITE_HOE.get());
         }
     }
 

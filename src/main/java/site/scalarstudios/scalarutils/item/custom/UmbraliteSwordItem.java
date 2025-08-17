@@ -17,21 +17,22 @@ import net.minecraft.world.level.Level;
 
 import java.util.List;
 import site.scalarstudios.scalarutils.datacomponent.ScalarDataComponents;
+import site.scalarstudios.scalarutils.item.tier.ScalarTiers;
 
 public class UmbraliteSwordItem extends SwordItem {
     // Cumulative kill thresholds: 64,  192,  448,  960,  1984
     //                             64, +128, +256, +512, +1024
     private static final int[] KILL_THRESHOLDS = {64, 192, 448, 960, 1984};
 
-    public UmbraliteSwordItem(Tier tier, Properties properties) {
-        super(tier, properties.component(DataComponents.TOOL, createToolProperties()));
+    public UmbraliteSwordItem(Properties properties) {
+        super(ScalarTiers.UMBRALITE, properties.component(DataComponents.TOOL, createToolProperties()));
     }
 
     @Override
     public boolean hurtEnemy(ItemStack stack, LivingEntity target, LivingEntity attacker) {
-        int kills = stack.get(ScalarDataComponents.UMBRALITE_KILLS.get()) != null ? stack.get(ScalarDataComponents.UMBRALITE_KILLS.get()) : 0;
+        int kills = stack.get(ScalarDataComponents.UMBRALITE_SWORD_KILLS.get()) != null ? stack.get(ScalarDataComponents.UMBRALITE_SWORD_KILLS.get()) : 0;
         if (!target.level().isClientSide && target instanceof Mob && attacker instanceof Player && target.isDeadOrDying()) {
-            stack.set(ScalarDataComponents.UMBRALITE_KILLS.get(), kills + 1);
+            stack.set(ScalarDataComponents.UMBRALITE_SWORD_KILLS.get(), kills + 1);
         }
         return super.hurtEnemy(stack, target, attacker);
     }
@@ -42,7 +43,7 @@ public class UmbraliteSwordItem extends SwordItem {
         if (level.isClientSide) return;
         if (!(entity instanceof Player player)) return;
         boolean isHeld = selected || (player.getMainHandItem() == stack || player.getOffhandItem() == stack);
-        int kills = stack.get(ScalarDataComponents.UMBRALITE_KILLS.get()) != null ? stack.get(ScalarDataComponents.UMBRALITE_KILLS.get()) : 0;
+        int kills = stack.get(ScalarDataComponents.UMBRALITE_SWORD_KILLS.get()) != null ? stack.get(ScalarDataComponents.UMBRALITE_SWORD_KILLS.get()) : 0;
         int strengthLevel = getStrengthLevel(kills);
         if (isHeld && strengthLevel > 0) {
             MobEffectInstance effect = new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, strengthLevel - 1, false, false, true);
@@ -59,7 +60,7 @@ public class UmbraliteSwordItem extends SwordItem {
 
     @Override
     public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
-        int kills = stack.get(ScalarDataComponents.UMBRALITE_KILLS.get()) != null ? stack.get(ScalarDataComponents.UMBRALITE_KILLS.get()) : 0;
+        int kills = stack.get(ScalarDataComponents.UMBRALITE_SWORD_KILLS.get()) != null ? stack.get(ScalarDataComponents.UMBRALITE_SWORD_KILLS.get()) : 0;
         int strengthLevel = getStrengthLevel(kills);
         int nextLevel = strengthLevel < KILL_THRESHOLDS.length ? KILL_THRESHOLDS[strengthLevel] : -1;
         if (strengthLevel > 0) {
@@ -70,7 +71,7 @@ public class UmbraliteSwordItem extends SwordItem {
         if (nextLevel != -1) {
             tooltipComponents.add(Component.translatable("tooltip.scalarutils.umbralite_sword.kills_to_next", nextLevel - kills).withStyle(ChatFormatting.YELLOW));
         } else {
-            tooltipComponents.add(Component.translatable("tooltip.scalarutils.umbralite_sword.max_level").withStyle(ChatFormatting.GREEN));
+            tooltipComponents.add(Component.translatable("tooltip.scalarutils.umbralite_tool.max_level").withStyle(ChatFormatting.GREEN));
         }
         tooltipComponents.add(Component.translatable("tooltip.scalarutils.umbralite_sword.total_kills", kills).withStyle(ChatFormatting.DARK_PURPLE));
         tooltipComponents.add(Component.translatable("tooltip.scalarutils.umbralite_sword.aoe_note").withStyle(ChatFormatting.RED));
