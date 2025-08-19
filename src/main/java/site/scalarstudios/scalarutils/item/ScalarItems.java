@@ -1,5 +1,6 @@
 package site.scalarstudios.scalarutils.item;
 
+import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.level.material.Fluids;
@@ -19,6 +20,7 @@ public class ScalarItems {
     // Crafting Items
     public static final Supplier<Item> CITRINE = ITEMS.register("citrine", () -> new Item(new Item.Properties()));
     public static final Supplier<Item> CHALICE = ITEMS.register("chalice", () -> new Item(new Item.Properties()));
+    public static final Supplier<Item> FLOUR = ITEMS.register("flour", () -> new Item(new Item.Properties()));
     public static final Supplier<Item> HEART_OF_THE_CORE = ITEMS.register("heart_of_the_core", () -> new Item(new Item.Properties().rarity(Rarity.UNCOMMON)));
     public static final Supplier<Item> MAIL = ITEMS.register("mail", () -> new Item(new Item.Properties()));
     public static final Supplier<Item> ROSE_GOLD_ALLOY_COMPOUND = ITEMS.register("rose_gold_alloy_compound", () -> new Item(new Item.Properties()));
@@ -30,6 +32,9 @@ public class ScalarItems {
     public static final Supplier<Item> WHITE_GOLD_ALLOY_COMPOUND = ITEMS.register("white_gold_alloy_compound", () -> new Item(new Item.Properties()));
     public static final Supplier<Item> WHITE_GOLD_INGOT = ITEMS.register("white_gold_ingot", () -> new Item(new Item.Properties()));
     public static final Supplier<Item> WHITE_GOLD_NUGGET = ITEMS.register("white_gold_nugget", () -> new Item(new Item.Properties()));
+
+    // Food Items
+    public static final Supplier<Item> TOAST = ITEMS.register("toast", () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(8).saturationModifier(1.0F).build())));
 
     // Utility Items
     public static final Supplier<Item> CHALICE_OF_THE_CORE = ITEMS.register("chalice_of_the_core", () -> new InfiniteFluidChaliceItem(Fluids.LAVA, new Item.Properties().stacksTo(1).rarity(Rarity.RARE)));

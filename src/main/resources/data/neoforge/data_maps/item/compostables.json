@@ -1,0 +1,10 @@
+{
+  "values": {
+    "scalarutils:flour": {
+      "chance": 0.65
+    },
+    "scalarutils:toast": {
+      "chance": 0.85
+    }
+  }
+}
