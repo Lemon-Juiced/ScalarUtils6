@@ -12,6 +12,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import site.scalarstudios.scalarutils.ScalarUtils;
 import site.scalarstudios.scalarutils.block.ScalarBlocks;
 import site.scalarstudios.scalarutils.block.custom.ConveyorBlock;
+import site.scalarstudios.scalarutils.block.custom.FlatLightBlock;
 import site.scalarstudios.scalarutils.item.ScalarItems;
 
 public class ScalarCreativeTabs {
@@ -41,6 +42,8 @@ public class ScalarCreativeTabs {
             event.accept(ScalarBlocks.WHITE_GOLD_BLOCK.get());
             for (DeferredHolder<Block, ? extends Block> block : ScalarBlocks.BLOCKS.getEntries())
                 if (block.get() instanceof ConveyorBlock) event.accept(block.get());
+            for (DeferredHolder<Block, ? extends Block> block : ScalarBlocks.BLOCKS.getEntries())
+                if (block.get() instanceof FlatLightBlock) event.accept(block.get());
         } else if (event.getTab() == SCALAR_ITEMS_TAB.get()) {
             event.accept(ScalarItems.CITRINE.get());
             event.accept(ScalarItems.CHALICE.get());

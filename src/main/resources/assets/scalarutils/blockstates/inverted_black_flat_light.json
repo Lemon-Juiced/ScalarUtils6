@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lit=false": {
+      "model": "scalarutils:block/black_flat_light_on"
+    },
+    "lit=true": {
+      "model": "scalarutils:block/black_flat_light"
+    }
+  }
+}

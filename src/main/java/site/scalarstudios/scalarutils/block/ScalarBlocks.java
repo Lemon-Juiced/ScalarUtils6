@@ -69,6 +69,7 @@ public class ScalarBlocks {
     public static void register(IEventBus eventBus) {
         // Register the Factories
         ScalarBlockFactory.buildConveyorBlocks();
+        ScalarBlockFactory.buildFlatLightBlocks();
 
         // Register the blocks
         BLOCKS.register(eventBus);
