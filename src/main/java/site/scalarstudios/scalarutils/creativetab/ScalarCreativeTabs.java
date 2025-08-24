@@ -49,6 +49,7 @@ public class ScalarCreativeTabs {
             event.accept(ScalarItems.CHALICE.get());
             event.accept(ScalarItems.FLOUR.get());
             event.accept(ScalarItems.HEART_OF_THE_CORE.get());
+            event.accept(ScalarItems.LUMINITE_SHARD.get());
             event.accept(ScalarItems.MAIL.get());
             event.accept(ScalarItems.ROSE_GOLD_ALLOY_COMPOUND.get());
             event.accept(ScalarItems.ROSE_GOLD_INGOT.get());

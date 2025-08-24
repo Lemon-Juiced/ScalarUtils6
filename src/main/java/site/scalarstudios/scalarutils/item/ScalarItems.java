@@ -21,6 +21,7 @@ public class ScalarItems {
     public static final Supplier<Item> CITRINE = ITEMS.register("citrine", () -> new Item(new Item.Properties()));
     public static final Supplier<Item> CHALICE = ITEMS.register("chalice", () -> new Item(new Item.Properties()));
     public static final Supplier<Item> FLOUR = ITEMS.register("flour", () -> new Item(new Item.Properties()));
+    public static final Supplier<Item> LUMINITE_SHARD = ITEMS.register("luminite_shard", () -> new Item(new Item.Properties()));
     public static final Supplier<Item> HEART_OF_THE_CORE = ITEMS.register("heart_of_the_core", () -> new Item(new Item.Properties().rarity(Rarity.UNCOMMON)));
     public static final Supplier<Item> MAIL = ITEMS.register("mail", () -> new Item(new Item.Properties()));
     public static final Supplier<Item> ROSE_GOLD_ALLOY_COMPOUND = ITEMS.register("rose_gold_alloy_compound", () -> new Item(new Item.Properties()));

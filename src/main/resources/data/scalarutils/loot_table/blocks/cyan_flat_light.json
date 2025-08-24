@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "scalarutils:cyan_flat_light"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "scalarutils:blocks/cyan_flat_light"
+}

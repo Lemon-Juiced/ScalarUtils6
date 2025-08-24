@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "scalarutils:citrine"
+    },
+    {
+      "item": "scalarutils:umbral_goo"
+    }
+  ],
+  "result": {
+    "id": "scalarutils:umbralite_gem",
+    "count": 1
+  }
+}

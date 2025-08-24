@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "scalarutils:brown_flat_light"
+    }
+  ],
+  "result": {
+    "id": "scalarutils:inverted_brown_flat_light",
+    "count": 1
+  }
+}
