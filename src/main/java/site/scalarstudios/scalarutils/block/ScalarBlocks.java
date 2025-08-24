@@ -70,6 +70,7 @@ public class ScalarBlocks {
         // Register the Factories
         ScalarBlockFactory.buildConveyorBlocks();
         ScalarBlockFactory.buildFlatLightBlocks();
+        ScalarBlockFactory.buildInvertedFlatLightBlocks();
 
         // Register the blocks
         BLOCKS.register(eventBus);

@@ -4,6 +4,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.material.MapColor;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import site.scalarstudios.scalarutils.block.custom.ConveyorBlock;
@@ -50,15 +51,20 @@ public class ScalarBlockFactory {
             DeferredBlock<Block> lightBlock = registerFlatLightBlock(colors[i] + "_flat_light", () -> new FlatLightBlock(BlockBehaviour.Properties.of()
                     .mapColor(mapColors[finalI])
                     .strength(0.3F)
-                    .lightLevel(state -> 15)
-                    .sound(SoundType.GLASS), false));
+                    .lightLevel(state -> state.getValue(BlockStateProperties.LIT) ? 15 : 0)
+                    .sound(SoundType.GLASS)));
+        }
+    }
+
+    public static void buildInvertedFlatLightBlocks() {
+        for (int i = 0; i < colors.length; i++) {
+            int finalI = i; // Final variable for lambda expression
             DeferredBlock<Block> invertedLightBlock = registerInvertedFlatLightBlock("inverted_" + colors[i] + "_flat_light", () -> new FlatLightBlock(BlockBehaviour.Properties.of()
                     .mapColor(mapColors[finalI])
                     .strength(0.3F)
-                    .lightLevel(state -> 15)
-                    .sound(SoundType.GLASS), true));
+                    .lightLevel(state -> state.getValue(BlockStateProperties.LIT) ? 0 : 15)
+                    .sound(SoundType.GLASS)));
         }
-
     }
 
     public static <T extends Block> DeferredBlock<T> registerConveyorBlock(String name, Supplier<T> block) {
